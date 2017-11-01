@@ -238,7 +238,7 @@
 
     
         <meta property="article:published_time" content="Wed Nov 01 2017 10:17:31 GMT+0800" />
-        <meta property="article:modified_time" content="Wed Nov 01 2017 13:10:25 GMT+0800" />
+        <meta property="article:modified_time" content="Wed Nov 01 2017 13:15:12 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
@@ -265,7 +265,7 @@
     "mainEntityOfPage": "http://yoursite.com/2017/11/01/使用hexo-Github创建个人博客/index.html",
     "headline": "使用hexo+Github创建个人博客",
     "datePublished": "Wed Nov 01 2017 10:17:31 GMT+0800",
-    "dateModified": "Wed Nov 01 2017 13:10:25 GMT+0800",
+    "dateModified": "Wed Nov 01 2017 13:15:12 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "百里落辉",
@@ -349,7 +349,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#使用hexo-Github创建个人博客"><span class="post-toc-number">1.</span> <span class="post-toc-text">使用hexo+Github创建个人博客</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#使用hexo-Github创建个人博客"><span class="post-toc-number">1.</span> <span class="post-toc-text">使用hexo+Github创建个人博客</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-搭建环境"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.搭建环境</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-创建blog"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2.创建blog</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-部署blog"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3.部署blog</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-遇到的坑"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">4.遇到的坑</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -493,8 +493,7 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="使用hexo-Github创建个人博客"><a href="#使用hexo-Github创建个人博客" class="headerlink" title="使用hexo+Github创建个人博客"></a>使用hexo+Github创建个人博客</h1><p>##1.搭建环境</p>
-<blockquote>
+        <h1 id="使用hexo-Github创建个人博客"><a href="#使用hexo-Github创建个人博客" class="headerlink" title="使用hexo+Github创建个人博客"></a>使用hexo+Github创建个人博客</h1><h2 id="1-搭建环境"><a href="#1-搭建环境" class="headerlink" title="1.搭建环境"></a>1.搭建环境</h2><blockquote>
 <ul>
 <li>ubutnu 17.04 </li>
 <li>Git 2.14.1</li>
@@ -503,15 +502,14 @@
 <li>安装Git(ubuntu)默认安装,可以更新</li>
 <li>安装 <a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a> Node.js</li>
 <li>下载解压,进入解压目录的bin目录,打开终端输入<br><strong>~$ npm install -g hexo</strong></li>
-<li>进入到要创建博客的目录,执行(blog是存放hexo项目的文件夹)<br><strong>~$ mkdir blog &amp;&amp; cd blog</strong><br>##2.创建blog</li>
+<li>进入到要创建博客的目录,执行(blog是存放hexo项目的文件夹)<br><strong>~$ mkdir blog &amp;&amp; cd blog</strong><h2 id="2-创建blog"><a href="#2-创建blog" class="headerlink" title="2.创建blog"></a>2.创建blog</h2></li>
 <li>执行<br><strong>~$ hexo init</strong><blockquote>
 <p>或者直接在任意目录通过终端输入<br><strong>~$ hexo init blog</strong></p>
 </blockquote>
 </li>
 </ul>
 <p>初始化完成后可以使用<br><strong>~$ hexo g &amp;&amp; hexo s</strong><br>在本地发布,当提示<br><strong>INFO  Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>. Press Ctrl+C to stop.</strong><br>说明hexo本地服务开启成功,通过<br><strong> <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> </strong><br>可以访问搭建完成的blog</p>
-<p>##3.部署blog</p>
-<ul>
+<h2 id="3-部署blog"><a href="#3-部署blog" class="headerlink" title="3.部署blog"></a>3.部署blog</h2><ul>
 <li>进Github官网<a href="https://github.com/" target="_blank" rel="external">Github官网</a> 登录</li>
 <li>点击 new repository 创建仓库<br><img src="https://github.com/jaredrjc/jaredrjc.github.io/tree/master/img/2017_11_1/create1.png" alt=""> </li>
 <li>Repository name 的命名方式决定了你部署到github上之后能不能正常访问你的博客,命名格式为 user_name.github.io ,其中user_name为Repository name前显示的Owner<br><img src="https://github.com/jaredrjc/jaredrjc.github.io/tree/master/img/2017_11_1/createrepository.png" alt=""> </li>
@@ -521,17 +519,16 @@
 <blockquote>
 <p>其中user_name是你在github上创建仓库的时候写的名字(必须是自己github的用户名)</p>
 </blockquote>
-<ul>
-<li>在本地blog/的目录下执行<br><strong>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</strong><blockquote>
+</li>
+<li><p>在本地blog/的目录下执行<br><strong>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</strong></p>
+<blockquote>
 <p>如果提示 Deployer not found: git<br>则需要安装 </p>
 </blockquote>
 </li>
 </ul>
-</li>
-</ul>
 <p>等待重新清理,重新生成,然后部署到github上.提示<br> <strong> Username for ‘<a href="https://github.com" target="_blank" rel="external">https://github.com</a>‘:</strong><br> 输入上文提到的user_name然后根据提示输入邮箱,等待上传成功<br><strong> INFO  Deploy done: </strong><br>然后通过user_name.github.io可以访问到已经部署的blog</p>
 </blockquote>
-<p>##4.遇到的坑<br>在Windows平台上,npm install hexo-deployer-git –save之后,会遇到一大堆的问题hexo-renderer-marked找不到或者没有安装或者需要 npm install hexo –save 之类</p>
+<h2 id="4-遇到的坑"><a href="#4-遇到的坑" class="headerlink" title="4.遇到的坑"></a>4.遇到的坑</h2><p>在Windows平台上,npm install hexo-deployer-git –save之后,会遇到一大堆的问题hexo-renderer-marked找不到或者没有安装或者需要 npm install hexo –save 之类</p>
 
         
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
